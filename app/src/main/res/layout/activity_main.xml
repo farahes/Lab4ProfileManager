@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <!-- Avatar Image -->
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_logo_00"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soccer Team Manager"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Team Name Field -->
+    <EditText
+        android:id="@+id/teamNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="(Please enter a team name)"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Name"
+        android:textSize="12sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Address Field -->
+    <EditText
+        android:id="@+id/teamAddressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="(Please enter a ZIP Code)"
+        android:inputType="textPostalAddress"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Address"
+        android:textSize="12sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Open Maps Button -->
+    <Button
+        android:id="@+id/openMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPEN IN GOOGLE MAPS"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+</LinearLayout>
+
